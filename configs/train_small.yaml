@@ -1,0 +1,13 @@
+# Small run: fast iteration, overfit test
+_base_: base.yaml
+
+model:
+  n_layers: 2
+  n_heads: 2
+  d_model: 128
+  d_ff: 512
+  max_seq_len: 256
+
+training:
+  batch_size: 16
+  max_steps: 1000
